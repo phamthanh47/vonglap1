@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a= new Array();
+    let a1=1;
+    let a2=1;
+    let N= parseInt(prompt("nhấp số phần tử dãy fibonaci:"))
+    for(i=3;i<= N;i++){
+        a=a1+a2;
+        a1=a2;
+        a2=a;
+        if(a % 5==0){
+            document.write("số fibonaci đầu tiên chia hết cho 5 là: "+a);
+            break;
+        }
+    }
+</script>
+
+</body>
+</html>
